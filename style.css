@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    font-family:Arial;
+}
+
+section{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero{
+    background:#111;
+    color:white;
+}
+
+.reveal{
+    opacity:0;
+    transform:translateY(80px);
+    transition:0.8s;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.btn{
+    padding:12px 25px;
+    background:#00bfff;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
